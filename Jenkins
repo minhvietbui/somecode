@@ -1,0 +1,10 @@
+pipeline {
+	agent { docker 'nginx' }
+	stages {
+		stage('run') {
+			steps {
+			  sh 'nginx -v'
+			}
+		}
+	}
+}
