@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "this script is from github"
 NUMBER=$(($NUMBERONE + $NUMBERTWO))
-echo "loop n1"
+echo "loop n2"
