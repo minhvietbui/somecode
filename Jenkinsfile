@@ -1,10 +1,11 @@
 pipeline {
-	agent { docker 'nginx' }
-	stages {
-		stage('run') {
-			steps {
-			  sh 'nginx -v'
-			}
-		}
-	}
+    agent { dockerfile true }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
+    }
 }
